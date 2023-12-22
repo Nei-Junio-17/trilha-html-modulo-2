@@ -1,6 +1,7 @@
 html, body {
     margin: 0;
 }
+
 body {
     background-color: #f1f1f1;
     display: flex;
@@ -13,26 +14,104 @@ body {
     margin: 0 auto;
     background-color: aquamarine;
 }
+
 .main {
     display: flex;
     flex-flow: column;
     width: 85%;
 }
+
 .menu {
     width: 15%;
-    background-color: aqua;
-    padding: 10px 20px 0px;
+    background-color: #3d6b56;
+    padding: 20px 20px 0px;
+    display: block;
+    flex-direction: column;
+    align-items: top;
+    
 }
+
 .header {
-    background-color: rgb(5, 108, 108);
+    background-color: #103026;
     min-height: 150px;
+    display: flex;
 }
+
 .content {
-    background-color: white;
+    background-color: #d5f1da;
     min-height: 300px;
-    padding: 20px;
+    padding: 30px 40px;
 }
-.footer {
-    background-color: rgb(99, 56, 240);
+
+.content p{
+    text-align: justify;
+    text-indent: 40px;
+    font-size: 20px;
+}
+
+.content span{
+    font-weight: 900;
+    font-size: 30px;
+}
+
+footer {
+    background-color: #103026;
     min-height: 150px;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    line-height: 0;
+}
+
+footer a{
+    text-decoration: line;
+    color: #fff;
+}
+
+.button{
+    width: clamp(100px, 95%, 250px);
+    height: 50px;
+    margin: 20px auto;  
+    border-radius: 10px;
+    border: 2px solid #103026;
+    font-size: 20px;
+    font-weight: 900;
+    background-color: #d5ecda;  
+    cursor: pointer;
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #103026;
+}
+
+.button:hover{
+    background-color: #103026;
+    border: 2px solid #103026;
+    color: #fff;
+    font-weight: 900;
+    border: 2px solid #c7e7ce;
+}
+
+.title{
+    display: flex;
+    width: auto;
+    height: auto;
+    margin: auto;
+    justify-content: center;   
+}
+
+.title-principal{
+    width: auto;
+    font-size: 100px;
+    color: #ddffe3;
+    justify-content: end;
+    display: flex;
+}
+
+.logo{
+    width: 10%;
+    margin: auto 0;
 }
